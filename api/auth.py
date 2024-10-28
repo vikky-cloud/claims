@@ -15,5 +15,5 @@ def login():
     data = request.get_json()
     email = data.get('email')
     password = data.get('password')
-    response, status_code = auth_service.login(email, password)  # Update to get response and status
-    return jsonify(response), status_code  # Return response and status code
+    response, status_code = auth_service.login(email, password)
+    return jsonify(response), status_code  
