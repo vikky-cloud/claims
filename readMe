@@ -1,0 +1,8 @@
+To run this application, you need to run it in virtual environment
+to activate virtual environment in your windows:
+    1. venv\Scripts\activate   
+
+To remove pycache from your file:
+    1. find . | grep -E "(/__pycache__$|\.pyc$|\.pyo$)" | xargs rm -rf
+
+Make sure to modify config file according to your db connections.
